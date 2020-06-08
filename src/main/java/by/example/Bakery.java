@@ -1,12 +1,12 @@
 package by.example;
 
+@Deprecated
 public class Bakery {
 
-    private Announcer announcer = ObjectFactory.getInstance(Announcer.class);
-
-    private Manager manager = ObjectFactory.getInstance(Manager.class);
-
-
+    @InjectByType
+    private Announcer announcer;
+    @InjectByType
+    private Manager manager;
 
     public void start(Pie pie) {
         announcer.announce("Getting started!");
