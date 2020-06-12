@@ -1,4 +1,4 @@
-package by.example;
+package by.example.domain;
 
 public class AngryManager implements Manager {
     public void makeStaffGetReady() {

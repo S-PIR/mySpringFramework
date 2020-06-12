@@ -1,5 +1,8 @@
-package by.example;
+package by.example.infrastructure;
 
+import by.example.infrastructure.annotations.Singleton;
+import by.example.infrastructure.config.Config;
+import by.example.infrastructure.factory.ObjectFactory;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +18,6 @@ public class ApplicationContext {
 
     public ApplicationContext(Config config) {
         this.config = config;
-
     }
 
     public <T> T getObject(Class<T> type) {

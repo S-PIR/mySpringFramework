@@ -1,5 +1,6 @@
-package by.example;
+package by.example.infrastructure.config;
 
+import by.example.infrastructure.config.Config;
 import lombok.Getter;
 import org.reflections.Reflections;
 

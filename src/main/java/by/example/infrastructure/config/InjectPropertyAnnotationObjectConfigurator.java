@@ -1,5 +1,7 @@
-package by.example;
+package by.example.infrastructure.config;
 
+import by.example.infrastructure.ApplicationContext;
+import by.example.infrastructure.annotations.InjectProperty;
 import lombok.SneakyThrows;
 
 import java.io.BufferedReader;

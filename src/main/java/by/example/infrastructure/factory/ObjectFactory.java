@@ -1,5 +1,8 @@
-package by.example;
+package by.example.infrastructure.factory;
 
+import by.example.infrastructure.ApplicationContext;
+import by.example.infrastructure.config.ObjectConfigurator;
+import by.example.infrastructure.config.ProxyConfigurator;
 import lombok.Setter;
 import lombok.SneakyThrows;
 
@@ -43,7 +46,7 @@ public class ObjectFactory {
 
     private <T> T wrapWithProxyIfNeeded(Class<T> implClass, T t) {
         for (ProxyConfigurator proxyConfigurator : proxyConfigurators) {
-            t = (T) proxyConfigurator.replaceProxyIfNeded(t, implClass);
+            t = (T) proxyConfigurator.replaceProxyIfNeeded(t, implClass);
         }
         return t;
     }

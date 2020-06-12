@@ -1,4 +1,4 @@
-package by.example;
+package by.example.infrastructure.config;
 
 import net.sf.cglib.proxy.Enhancer;
 
@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 
 public class DeprecatedHandlerProxyConfigurator implements ProxyConfigurator {
     @Override
-    public Object replaceProxyIfNeded(Object t, Class implClass) {
+    public Object replaceProxyIfNeeded(Object t, Class implClass) {
         if (implClass.getInterfaces().length == 0) {
             return Enhancer.create(implClass, new net.sf.cglib.proxy.InvocationHandler() {
                 @Override

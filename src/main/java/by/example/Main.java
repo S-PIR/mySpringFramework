@@ -1,7 +1,13 @@
 package by.example;
 
+import by.example.domain.Bakery;
+import by.example.domain.Manager;
+import by.example.domain.ManagerImpl;
+import by.example.domain.Pie;
+import by.example.infrastructure.Application;
+import by.example.infrastructure.ApplicationContext;
+
 import java.util.HashMap;
-import java.util.Map;
 
 import static java.util.Map.*;
 

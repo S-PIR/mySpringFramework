@@ -1,4 +1,4 @@
-package by.example;
+package by.example.infrastructure.config;
 
 import org.reflections.Reflections;
 

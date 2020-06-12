@@ -1,4 +1,6 @@
-package by.example;
+package by.example.domain;
+
+import by.example.infrastructure.annotations.InjectByType;
 
 @Deprecated
 public class Bakery {
